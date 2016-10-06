@@ -1,3 +1,8 @@
-<h1>
-  {{title}}
-</h1>
+<!-- Expresión -->
+<h1>{{title}} by {{quien}}</h1>
+<!-- Propiedad -->
+<p [hidden]="!visible">Adios</p>
+<!-- Binding -->
+<p>¿Cómo te llamas? <input type="text" [(ngModel)]="quien"></p>
+<!-- Evento -->
+<button (click)="decirAdios()">Decir Adios</button>
