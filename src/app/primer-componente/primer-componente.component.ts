@@ -7,8 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PrimerComponenteComponent implements OnInit {
 
-  dato = "Creando componentes para DesarrolloWeb.com";
-  constructor() { }
+  texto: string =  "SI";
+  estadoPositivo: boolean = true;
+
+  cambiaEstado() {
+    this.texto = (this.estadoPositivo) ?  "NO" : "SI";
+    this.estadoPositivo = !this.estadoPositivo; 
+  }
 
   ngOnInit() {
     console.log('componente inicializado...');
